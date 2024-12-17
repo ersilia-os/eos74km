@@ -1,18 +1,21 @@
-Identifier: ""
-Slug: ""
-Status: ""
-Title: ""
-Description: ""
-Mode: ""
+Identifier: eos74km
+Slug: antimicrobial-kg-ml
+Status: In progress
+Title: Antimicrobial class specificity prediction
+Description: Prediction of antimicrobial class specificity using simple machine learning
+  methods applied to an antimicrobial knowledge graph. The knowledge graph is built
+  on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity agains gram-positive
+  or gram-negative bacteria.
+Mode: ''
 Task: []
 Input: []
-Input Shape: ""
+Input Shape: ''
 Output: []
 Output Type: []
-Output Shape: ""
-Interpretation: ""
-Tag: []
-Publication: ""
-Source Code: ""
-License: ""
-
+Output Shape: ''
+Interpretation: ''
+Tag:
+- Antimicrobial activity
+Publication: https://www.biorxiv.org/content/10.1101/2024.12.02.626313v1.full
+Source Code: https://github.com/IMI-COMBINE/broad_spectrum_prediction
+License: MIT
