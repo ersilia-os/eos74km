@@ -4,16 +4,17 @@ Status: In progress
 Title: Antimicrobial class specificity prediction
 Description: Prediction of antimicrobial class specificity using simple machine learning
   methods applied to an antimicrobial knowledge graph. The knowledge graph is built
-  on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity agains gram-positive
-  or gram-negative bacteria.
-Mode: ''
-Task: []
-Input: []
-Input Shape: ''
-Output: []
-Output Type: []
-Output Shape: ''
-Interpretation: ''
+  on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity against gram-positive
+  or gram-negative bacteria. The best model according to the authors is a Random Forest with MHFP6
+  fingerprints.
+Mode: 'Pre-trained'
+Task: 'Classification'
+Input: 'Compound'
+Input Shape: 'Single'
+Output: 'Probability'
+Output Type: 'Float'
+Output Shape: 'List'
+Interpretation: 'Class probabilities for each antimicrobial class'
 Tag:
 - Antimicrobial activity
 Publication: https://www.biorxiv.org/content/10.1101/2024.12.02.626313v1.full
