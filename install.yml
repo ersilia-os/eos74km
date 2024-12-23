@@ -1,0 +1,7 @@
+python: "3.10"
+commands:
+    - ["pip", "joblib", "1.4.2"]
+    - ["pip", "scikit-learn", "1.2.2"]
+    - ["pip", "numpy", "1.26.4"]
+    - ["pip", "mhfp", "1.9.6"]
+    - ["pip", "rdkit", "2024.3.6"]

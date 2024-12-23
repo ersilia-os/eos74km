@@ -1,0 +1,27 @@
+Identifier: eos74km
+Slug: antimicrobial-kg-ml
+Status: In progress
+Title: Antimicrobial class specificity prediction
+Description: Prediction of antimicrobial class specificity using simple machine learning
+  methods applied to an antimicrobial knowledge graph. The knowledge graph is built
+  on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity against
+  gram-positive or gram-negative bacteria. The best model according to the authors
+  is a Random Forest with MHFP6 fingerprints.
+Mode: Pretrained
+Task: Classification
+Input: Compound
+Input Shape: Single
+Output: Probability
+Output Type: Float
+Output Shape: List
+Interpretation: Class probabilities for each antimicrobial class
+Tag:
+- Antimicrobial activity
+Publication: https://www.biorxiv.org/content/10.1101/2024.12.02.626313v1.full
+Source Code: https://github.com/IMI-COMBINE/broad_spectrum_prediction
+License: MIT
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos74km
+Docker Architecture:
+- AMD64
+- ARM64
