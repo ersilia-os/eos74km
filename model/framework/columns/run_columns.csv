@@ -1,0 +1,6 @@
+name,type,direction,description
+acid_fast,float,high,Classification score indicating the class probability of inhibiting growth of acid-fast bacteria
+fungi,float,high,Classification score indicating the class probability of inhibiting growth of fungi
+gram_negative,float,high,Classification score indicating the class probability of inhibiting growth of gram-negative bacteria
+gram_positive,float,high,Classification score indicating the class probability of inhibiting growth of gram-positive bacteria
+inactive,float,high,Classification score indicating the class probability of the compound being inactive in antimicrobial assays

@@ -14,6 +14,7 @@ checkpoints_dir = os.path.abspath(os.path.join(root, "..", "..",  "checkpoints")
 # load the model
 model = joblib.load(os.path.join(checkpoints_dir, "mhfp6_rf.joblib"))
 label_classes = model.classes_.tolist()
+label_classes = [str(l).replace("-", "_") for l in label_classes]
 
 # instantiate the fingerprint encoder
 mhfp_encoder = MHFPEncoder(n_permutations=2048, seed=42)  # MHFP6 fingerprint
