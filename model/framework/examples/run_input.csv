@@ -1,5 +1,4 @@
 smiles
-NC[C@H]1O[C@H](O[C@H]2[C@H](O)[C@@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](N)[C@H]3O)[C@H](N)C[C@@H]2N)[C@H](O)[C@@H](O)[C@@H]1O.O=S(=O)(O)O
-CC[C@H]1OC(=O)[C@H](C)[C@H]2OC3(CCN(C(=O)c4cccn4C)CC3)O[C@](C)(C[C@@H](C)CN[C@H](C)[C@@H](O)[C@]1(C)O)[C@H](O[C@@H]1O[C@H](C)C[C@H](N(C)C)[C@H]1O)[C@H]2C
-C=C(C(=O)c1ccc(F)cc1)c1ccc(Cl)cc1Cl
-CCCC1=CC(=O)OC2=C(C(=O)C(C)CC)C(O)=C(CC=C(C)C)C(O)=C12
+Cn1c2cc(ccc2oc1=O)-c1ccc(C[C@H](NC(=O)[C@@H]2CNCCCO2)C#N)cc1
+CCCCc1ccc(O)cc1O
+CC(C)(Oc1ccc(Cl)cc1)C(=O)OCCOC(=O)c1cccnc1

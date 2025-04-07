@@ -18,7 +18,7 @@ label_classes = [str(l).replace("-", "_") for l in label_classes]
 
 # instantiate the fingerprint encoder
 mhfp_encoder = MHFPEncoder(n_permutations=2048, seed=42)  # MHFP6 fingerprint
-ecbl_mhfp6_fingerprints = []
+ecbl_mhfp6_fingerprints = []  # This is not used
 
 # parse arguments
 input_file = sys.argv[1]
@@ -52,9 +52,11 @@ print(y)
 # assemble the output
 outputs = []
 empty_output = [None]*len(label_classes)
+j = 0  # len(y) != len(smiles_list)
 for i, idx in enumerate(smiles_list):
     if i in idxs:
-        outputs.append(y[i])
+        outputs.append(y[j])
+        j += 1
     else:
         outputs.append(empty_output)
 
