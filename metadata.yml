@@ -1,8 +1,8 @@
 Biomedical Area:
-  - Antimicrobial resistance
+- Antimicrobial resistance
 Contributor: miquelduranfrigola
 Deployment:
-  - Local
+- Local
 Description: |
   Prediction of antimicrobial class specificity using simple machine learning
   methods applied to an antimicrobial knowledge graph. The knowledge graph is built
@@ -10,19 +10,19 @@ Description: |
   gram-positive or gram-negative bacteria. The best model according to the authors
   is a Random Forest with MHFP6 fingerprints.
 Docker Architecture:
-  - AMD64
-  - ARM64
+- AMD64
+- ARM64
 DockerHub: https://hub.docker.com/r/ersiliaos/eos74km
 Identifier: eos74km
 Incorporation Date: '2024-12-17'
 Input:
-  - Compound
+- Compound
 Input Dimension: 1
 Input Shape: Single
 Interpretation: Class probabilities for each antimicrobial class
 License: MIT
 Output:
-  - Score
+- Score
 Output Consistency: Fixed
 Output Dimension: 5
 Publication: https://www.biorxiv.org/content/10.1101/2024.12.02.626313v1.full
@@ -36,11 +36,11 @@ Source Type: External
 Status: Ready
 Subtask: Activity prediction
 Tag:
-  - Antimicrobial activity
+- Antimicrobial activity
 Target Organism:
-  - Fungi
-  - Fast-acid bacteria
-  - Gram-positive bacteria
-  - Gram-negative bacteria
+- Fungi
+- Fast-acid bacteria
+- Gram-positive bacteria
+- Gram-negative bacteria
 Task: Annotation
 Title: Antimicrobial class specificity prediction
