@@ -1,6 +1,10 @@
 # Antimicrobial class specificity prediction
 
-Prediction of antimicrobial class specificity using simple machine learning methods applied to an antimicrobial knowledge graph. The knowledge graph is built on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity against gram-positive or gram-negative bacteria. The best model according to the authors is a Random Forest with MHFP6 fingerprints.
+Prediction of antimicrobial class specificity using simple machine learning
+methods applied to an antimicrobial knowledge graph. The knowledge graph is built
+on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity against
+gram-positive or gram-negative bacteria. The best model according to the authors
+is a Random Forest with MHFP6 fingerprints.
 
 This model was incorporated on 2024-12-17.
 
