@@ -38,7 +38,7 @@ Publication: https://www.biorxiv.org/content/10.1101/2024.12.02.626313v1.full
 Source Code: https://github.com/IMI-COMBINE/broad_spectrum_prediction
 License: MIT
 Contributor: miquelduranfrigola
-Incorporation Date: '2024-12-17'
+Incorporation Date: '"2024-12-17"'
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos74km
 Docker Architecture:
