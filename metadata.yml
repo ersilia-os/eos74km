@@ -1,46 +1,46 @@
-Biomedical Area:
-- Antimicrobial resistance
-Contributor: miquelduranfrigola
-Deployment:
-- Local
+Identifier: eos74km
+Slug: antimicrobial-kg-ml
+Status: Ready
+Title: Antimicrobial class specificity prediction
 Description: |
   Prediction of antimicrobial class specificity using simple machine learning
   methods applied to an antimicrobial knowledge graph. The knowledge graph is built
   on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity against
   gram-positive or gram-negative bacteria. The best model according to the authors
   is a Random Forest with MHFP6 fingerprints.
-Docker Architecture:
-- AMD64
-- ARM64
-DockerHub: https://hub.docker.com/r/ersiliaos/eos74km
-Identifier: eos74km
-Incorporation Date: '2024-12-17'
+Deployment:
+  - Local
+Source: Local
+Source Type: External
+Task: Annotation
+Subtask: Activity prediction
 Input:
-- Compound
+  - Compound
 Input Dimension: 1
 Input Shape: Single
-Interpretation: Class probabilities for each antimicrobial class
-License: MIT
 Output:
-- Score
-Output Consistency: Fixed
+  - Score
 Output Dimension: 5
-Publication: https://www.biorxiv.org/content/10.1101/2024.12.02.626313v1.full
+Output Consistency: Fixed
+Interpretation: Class probabilities for each antimicrobial class
+Tag:
+  - Antimicrobial activity
+Biomedical Area:
+  - Antimicrobial resistance
+Target Organism:
+  - Fungi
+  - Fast-acid bacteria
+  - Gram-positive bacteria
+  - Gram-negative bacteria
 Publication Type: Preprint
 Publication Year: 2024
-S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip
-Slug: antimicrobial-kg-ml
-Source: Local
+Publication: https://www.biorxiv.org/content/10.1101/2024.12.02.626313v1.full
 Source Code: https://github.com/IMI-COMBINE/broad_spectrum_prediction
-Source Type: External
-Status: Ready
-Subtask: Activity prediction
-Tag:
-- Antimicrobial activity
-Target Organism:
-- Fungi
-- Fast-acid bacteria
-- Gram-positive bacteria
-- Gram-negative bacteria
-Task: Annotation
-Title: Antimicrobial class specificity prediction
+License: MIT
+Contributor: miquelduranfrigola
+Incorporation Date: '2024-12-17'
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos74km
+Docker Architecture:
+  - AMD64
+  - ARM64
