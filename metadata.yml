@@ -43,3 +43,5 @@ DockerHub: https://hub.docker.com/r/ersiliaos/eos74km
 Docker Architecture:
   - AMD64
   - ARM64
+Model Size: 768.0
+Environment Size: 631.0
