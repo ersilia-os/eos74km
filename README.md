@@ -49,7 +49,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `768`
 - **Environment Size (Mb):** `632`
+- **Image Size (Mb):** `2889.02`
 
+**Computational Performance (seconds):**
+- 10 inputs: `34.58`
+- 100 inputs: `26.06`
+- 10000 inputs: `561.66`
 
 ### References
 - **Source Code**: [https://github.com/IMI-COMBINE/broad_spectrum_prediction](https://github.com/IMI-COMBINE/broad_spectrum_prediction)
