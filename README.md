@@ -6,8 +6,7 @@ Prediction of antimicrobial class specificity using simple machine learning
  gram-positive or gram-negative bacteria. The best model according to the authors
  is a Random Forest with MHFP6 fingerprints.
 
-This model was incorporated on 2024-12-17.
-
+This model was incorporated on 2024-12-17.Last packaged on 2025-08-27.
 
 ## Information
 ### Identifiers
@@ -50,12 +49,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `768`
 - **Environment Size (Mb):** `650`
-- **Image Size (Mb):** `2889.02`
+- **Image Size (Mb):** `2961.1`
 
 **Computational Performance (seconds):**
-- 10 inputs: `34.58`
-- 100 inputs: `26.06`
-- 10000 inputs: `561.66`
+- 10 inputs: `29.41`
+- 100 inputs: `19.79`
+- 10000 inputs: `156.12`
 
 ### References
 - **Source Code**: [https://github.com/IMI-COMBINE/broad_spectrum_prediction](https://github.com/IMI-COMBINE/broad_spectrum_prediction)
