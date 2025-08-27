@@ -8,6 +8,7 @@ Prediction of antimicrobial class specificity using simple machine learning
 
 This model was incorporated on 2024-12-17.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos74km`
