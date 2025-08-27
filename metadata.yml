@@ -2,11 +2,11 @@ Identifier: eos74km
 Slug: antimicrobial-kg-ml
 Status: Ready
 Title: Antimicrobial class specificity prediction
-Description: "Prediction of antimicrobial class specificity using simple machine learning\n
-  methods applied to an antimicrobial knowledge graph. The knowledge graph is built\n
-  on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity against\n
-  gram-positive or gram-negative bacteria. The best model according to the authors\n
-  is a Random Forest with MHFP6 fingerprints."
+Description: "Prediction of antimicrobial class specificity using simple machine learning\n\
+  \ methods applied to an antimicrobial knowledge graph. The knowledge graph is built\n\
+  \ on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity against\n\
+  \ gram-positive or gram-negative bacteria. The best model according to the authors\n\
+  \ is a Random Forest with MHFP6 fingerprints."
 Deployment:
   - Local
 Source: Local
@@ -16,7 +16,6 @@ Subtask: Activity prediction
 Input:
   - Compound
 Input Dimension: 1
-Input Shape: Single
 Output:
   - Score
 Output Dimension: 5
@@ -51,3 +50,4 @@ Computational Performance 2: 24.45
 Computational Performance 3: 26.06
 Computational Performance 4: 122.67
 Computational Performance 5: 561.66
+Input Shape: Single
