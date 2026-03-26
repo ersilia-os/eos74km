@@ -37,19 +37,17 @@ Source Code: https://github.com/IMI-COMBINE/broad_spectrum_prediction
 License: MIT
 Contributor: miquelduranfrigola
 Incorporation Date: '2024-12-17'
-Last Packaging Date: '2025-08-27'
+Last Packaging Date: '2026-03-26'
 Release: v1.0.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos74km
-Docker Architecture:
-  - AMD64
-  - ARM64
+Docker Architecture: AMD64
 Model Size: 768.0
 Environment Size: 635.0
-Image Size: 2961.1
-Computational Performance 1: 29.41
-Computational Performance 2: 19.04
-Computational Performance 3: 19.79
-Computational Performance 4: 43.93
-Computational Performance 5: 156.12
+Image Size: 2966.67
+Computational Performance 1: 40.85
+Computational Performance 2: 27.79
+Computational Performance 3: 26.21
+Computational Performance 4: 46.34
+Computational Performance 5: 161.97
 Input Shape: Single
