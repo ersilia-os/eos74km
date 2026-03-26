@@ -6,7 +6,7 @@ Prediction of antimicrobial class specificity using simple machine learning
  gram-positive or gram-negative bacteria. The best model according to the authors
  is a Random Forest with MHFP6 fingerprints.
 
-This model was incorporated on 2024-12-17.Last packaged on 2025-08-27.
+This model was incorporated on 2024-12-17.Last packaged on 2026-03-26.
 
 ## Information
 ### Identifiers
@@ -43,18 +43,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos74km](https://hub.docker.com/r/ersiliaos/eos74km)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `768`
 - **Environment Size (Mb):** `635`
-- **Image Size (Mb):** `2961.1`
+- **Image Size (Mb):** `2966.67`
 
 **Computational Performance (seconds):**
-- 10 inputs: `29.41`
-- 100 inputs: `19.79`
-- 10000 inputs: `156.12`
+- 10 inputs: `40.85`
+- 100 inputs: `26.21`
+- 10000 inputs: `161.97`
 
 ### References
 - **Source Code**: [https://github.com/IMI-COMBINE/broad_spectrum_prediction](https://github.com/IMI-COMBINE/broad_spectrum_prediction)
