@@ -37,17 +37,23 @@ with open(input_file, "r") as f:
 R = []
 idxs = []
 for i, smiles in enumerate(smiles_list):
-    can_smiles = CanonSmiles(smiles)
-    if not can_smiles:
+    try:
+        can_smiles = CanonSmiles(smiles)
+        if not can_smiles:
+            continue
+        R.append(mhfp_encoder.encode(can_smiles, radius=3))
+        idxs.append(i)
+    except Exception:
         continue
-    R.append(mhfp_encoder.encode(can_smiles, radius=3))
-    idxs.append(i)
-R = np.array(R)
 idxs = set(idxs)
 
 # run model
-y = model.predict_proba(R)
-print(y)
+if len(R) > 0:
+    R = np.array(R)
+    y = model.predict_proba(R)
+    print(y)
+else:
+    y = np.array([])
 
 # assemble the output
 outputs = []
