@@ -58,7 +58,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://github.com/IMI-COMBINE/broad_spectrum_prediction](https://github.com/IMI-COMBINE/broad_spectrum_prediction)
-- **Publication**: [https://pubs.acs.org/doi/10.1021/acs.jcim.4c02347](https://pubs.acs.org/doi/10.1021/acs.jcim.4c02347)
+- **Publication**: [https://doi.org/10.1021/acs.jcim.4c02347](https://doi.org/10.1021/acs.jcim.4c02347)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2024`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
