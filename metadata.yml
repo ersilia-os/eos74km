@@ -23,13 +23,18 @@ Output Consistency: Fixed
 Interpretation: Class probabilities for each antimicrobial class
 Tag:
   - Antimicrobial activity
+  - Antifungal activity
+  - ESKAPE
 Biomedical Area:
   - Antimicrobial resistance
 Target Organism:
-  - Fungi
-  - Fast-acid bacteria
-  - Gram-positive bacteria
-  - Gram-negative bacteria
+  - Escherichia coli
+  - Pseudomonas aeruginosa
+  - Acinetobacter baumannii
+  - Candida albicans
+  - Klebsiella pneumoniae
+  - Enterococcus faecalis
+  - Staphylococcus aureus
 Publication Type: Peer reviewed
 Publication Year: 2024
 Publication: https://doi.org/10.1021/acs.jcim.4c02347
