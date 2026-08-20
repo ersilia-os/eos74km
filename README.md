@@ -1,6 +1,10 @@
 # Antimicrobial class specificity prediction
 
-Predicts which broad class of organism a compound is likely to act against, separating Gram-positive and Gram-negative bacteria from fungi rather than predicting potency against one strain. Gadiya and colleagues trained the classifier on curated antimicrobial activity spanning multiple pathogen types, addressing a practical triage question early in discovery. Class probabilities are reported independently, so a compound may score highly for more than one, reflecting genuine broad-spectrum potential.
+Prediction of antimicrobial class specificity using simple machine learning
+ methods applied to an antimicrobial knowledge graph. The knowledge graph is built
+ on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity against
+ gram-positive or gram-negative bacteria. The best model according to the authors
+ is a Random Forest with MHFP6 fingerprints.
 
 This model was incorporated on 2024-12-17.Last packaged on 2026-03-26.
 
@@ -23,7 +27,7 @@ This model was incorporated on 2024-12-17.Last packaged on 2026-03-26.
 ### Output
 - **Output Dimension:** `5`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Class probabilities for activity against Gram-positive bacteria, Gram-negative bacteria and fungi.
+- **Interpretation:** Class probabilities for each antimicrobial class
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
