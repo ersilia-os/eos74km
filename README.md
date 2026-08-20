@@ -1,10 +1,6 @@
 # Antimicrobial class specificity prediction
 
-Prediction of antimicrobial class specificity using simple machine learning
- methods applied to an antimicrobial knowledge graph. The knowledge graph is built
- on ChEMBL, Co-ADD and SPARK. Endpoints are broad terms such as activity against
- gram-positive or gram-negative bacteria. The best model according to the authors
- is a Random Forest with MHFP6 fingerprints.
+Predicts which broad class of organism a compound is likely to act against, separating Gram-positive and Gram-negative bacteria from fungi rather than predicting potency against one strain. Gadiya and colleagues trained the classifier on curated antimicrobial activity spanning multiple pathogen types, addressing a practical triage question early in discovery. Class probabilities are reported independently, so a compound may score highly for more than one, reflecting genuine broad-spectrum potential.
 
 This model was incorporated on 2024-12-17.Last packaged on 2026-03-26.
 
@@ -27,7 +23,7 @@ This model was incorporated on 2024-12-17.Last packaged on 2026-03-26.
 ### Output
 - **Output Dimension:** `5`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Class probabilities for each antimicrobial class
+- **Interpretation:** Class probabilities for activity against Gram-positive bacteria, Gram-negative bacteria and fungi.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
@@ -60,7 +56,7 @@ Below are the **Output Columns** of the model:
 - **Source Code**: [https://github.com/IMI-COMBINE/broad_spectrum_prediction](https://github.com/IMI-COMBINE/broad_spectrum_prediction)
 - **Publication**: [https://doi.org/10.1021/acs.jcim.4c02347](https://doi.org/10.1021/acs.jcim.4c02347)
 - **Publication Type:** `Peer reviewed`
-- **Publication Year:** `2024`
+- **Publication Year:** `2025`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
 ### License
