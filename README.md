@@ -1,6 +1,6 @@
 # Antimicrobial class specificity prediction
 
-Predicts which broad class of organism a compound is likely to act against, separating Gram-positive and Gram-negative bacteria from fungi rather than predicting potency against one strain. Gadiya and colleagues trained the classifier on curated antimicrobial activity spanning multiple pathogen types, addressing a practical triage question early in discovery. Class probabilities are reported independently, so a compound may score highly for more than one, reflecting genuine broad-spectrum potential.
+Sorts a compound into one of five antimicrobial outcomes, activity against Gram-positive, Gram-negative or acid-fast bacteria, activity against fungi, or no antimicrobial activity, answering a triage question rather than predicting potency against one strain. Gadiya and colleagues assembled AntiMicrobial-KG, a knowledge graph of public in vitro MIC data from ChEMBL, CO-ADD and SPARK spanning 81,490 compounds, and found a random forest on MHFP6 fingerprints best, at 75.9% accuracy and a Cohen's kappa of 0.68. Predictions were checked against screens of the EU-OS compound libraries.
 
 This model was incorporated on 2024-12-17.Last packaged on 2026-03-26.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2024-12-17.Last packaged on 2026-03-26.
 ### Output
 - **Output Dimension:** `5`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Class probabilities for activity against Gram-positive bacteria, Gram-negative bacteria and fungi.
+- **Interpretation:** Probabilities over five mutually exclusive classes covering Gram-positive, Gram-negative, acid-fast and fungal activity plus inactivity.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
