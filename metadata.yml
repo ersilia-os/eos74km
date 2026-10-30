@@ -2,14 +2,14 @@ Identifier: eos74km
 Slug: antimicrobial-kg-ml
 Status: Ready
 Title: Antimicrobial class specificity prediction
-Description: Sorts a compound into one of five antimicrobial outcomes, activity against
-  Gram-positive, Gram-negative or acid-fast bacteria, activity against fungi, or no
-  antimicrobial activity, answering a triage question rather than predicting potency
-  against one strain. Gadiya and colleagues assembled AntiMicrobial-KG, a knowledge
-  graph of public in vitro MIC data from ChEMBL, CO-ADD and SPARK spanning 81,490
-  compounds, and found a random forest on MHFP6 fingerprints best, at 75.9% accuracy
-  and a Cohen's kappa of 0.68. Predictions were checked against screens of the EU-OS
-  compound libraries.
+Description: Sorts a compound into one of five antimicrobial outcomes, activity 
+  against Gram-positive, Gram-negative or acid-fast bacteria, activity against 
+  fungi, or no antimicrobial activity, answering a triage question rather than 
+  predicting potency against one strain. Gadiya and colleagues assembled 
+  AntiMicrobial-KG, a knowledge graph of public in vitro MIC data from ChEMBL, 
+  CO-ADD and SPARK spanning 81,490 compounds, and found a random forest on MHFP6
+  fingerprints best, at 75.9% accuracy and a Cohens kappa of 0.68. Predictions 
+  were checked against screens of the EU-OS compound libraries.
 Deployment:
   - Local
 Source: Local
@@ -23,8 +23,8 @@ Output:
   - Score
 Output Dimension: 5
 Output Consistency: Fixed
-Interpretation: Probabilities over five mutually exclusive classes covering Gram-positive,
-  Gram-negative, acid-fast and fungal activity plus inactivity.
+Interpretation: Probabilities over five mutually exclusive classes covering 
+  Gram-positive, Gram-negative, acid-fast and fungal activity plus inactivity.
 Tag:
   - Antimicrobial activity
   - Antifungal activity
@@ -47,7 +47,7 @@ License: MIT
 Contributor: miquelduranfrigola
 Incorporation Date: '2024-12-17'
 Last Packaging Date: '2026-03-26'
-Release: v1.0.1
+Release: v1.0.2
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos74km
 Docker Architecture: AMD64
