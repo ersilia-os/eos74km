@@ -1,8 +1,9 @@
 # Antimicrobial class specificity prediction
 
-Sorts a compound into one of five antimicrobial outcomes, activity against Gram-positive, Gram-negative or acid-fast bacteria, activity against fungi, or no antimicrobial activity, answering a triage question rather than predicting potency against one strain. Gadiya and colleagues assembled AntiMicrobial-KG, a knowledge graph of public in vitro MIC data from ChEMBL, CO-ADD and SPARK spanning 81,490 compounds, and found a random forest on MHFP6 fingerprints best, at 75.9% accuracy and a Cohen's kappa of 0.68. Predictions were checked against screens of the EU-OS compound libraries.
+Sorts a compound into one of five antimicrobial outcomes, activity against Gram-positive, Gram-negative or acid-fast bacteria, activity against fungi, or no antimicrobial activity, answering a triage question rather than predicting potency against one strain. Gadiya and colleagues assembled AntiMicrobial-KG, a knowledge graph of public in vitro MIC data from ChEMBL, CO-ADD and SPARK spanning 81,490 compounds, and found a random forest on MHFP6 fingerprints best, at 75.9% accuracy and a Cohens kappa of 0.68. Predictions were checked against screens of the EU-OS compound libraries.
 
-This model was incorporated on 2024-12-17.Last packaged on 2026-03-26.
+This model was incorporated on 2024-12-17.
+Last packaged on 2026-03-26.
 
 ## Information
 ### Identifiers
@@ -13,8 +14,8 @@ This model was incorporated on 2024-12-17.Last packaged on 2026-03-26.
 - **Task:** `Annotation`
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `Antimicrobial resistance`
-- **Target Organism:** `Fungi`, `Fast-acid bacteria`, `Gram-positive bacteria`, `Gram-negative bacteria`
-- **Tags:** `Antimicrobial activity`
+- **Target Organism:** `Escherichia coli`, `Pseudomonas aeruginosa`, `Acinetobacter baumannii`, `Candida albicans`, `Klebsiella pneumoniae`, `Enterococcus faecalis`, `Staphylococcus aureus`
+- **Tags:** `Antimicrobial activity`, `Antifungal activity`, `ESKAPE`
 
 ### Input
 - **Input:** `Compound`
@@ -41,6 +42,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos74km](https://hub.docker.com/r/ersiliaos/eos74km)
 - **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos74km.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos74km_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos74km_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `768`
